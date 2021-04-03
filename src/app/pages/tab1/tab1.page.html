@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Inicio
+        </ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button menu="first"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <ion-searchbar animated></ion-searchbar>
+            </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let c of contenidos | async">
+            <ion-col size="12">
+                <ion-card (click)="tema(c)">
+                    <img src="../../assets/img{{ c.img[0] }}" />
+                    <ion-card-header>
+                        <ion-card-subtitle color="primary">{{ c.grado }}</ion-card-subtitle>
+                        <ion-card-title>{{ c.titulo }}</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content> {{ c.descripcion[0] }} </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

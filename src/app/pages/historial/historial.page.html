@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Historial</ion-title>
+        <ion-buttons slot="start">
+            <ion-button (click)="inicio()">
+                <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item detail *ngFor="let c of contenidos | async" (click)="tema(c)">
+            <img class="avatar" slot="start" src="../../assets/img{{ c.img[0] }} " />
+            <ion-label>
+                <h2>{{ c.titulo }}</h2>
+                <p>Sep 24, 2020, 12:46:21 PM</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

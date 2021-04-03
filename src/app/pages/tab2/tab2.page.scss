@@ -1,0 +1,31 @@
+ion-card-content span {
+    color: var(--ion-color-primary);
+}
+
+.icono-comentario {
+    font-size: 2em;
+    margin-left: 90%;
+}
+
+ion-card-content p {
+    font-size: 1.1em;
+}
+
+.icono-publicacion {
+    font-size: 1.2em;
+    margin-right: 2%;
+}
+
+.user-img {
+    width: 15%;
+}
+
+ion-card-subtitle p {
+    margin-left: 5%;
+    margin-bottom: 50%;
+    display: inline;
+}
+
+ion-chip {
+    --background: none;
+}

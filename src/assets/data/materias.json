@@ -1,0 +1,31 @@
+[{
+        "id": 0,
+        "titulo": "Matemáticas",
+        "temas": ["Suma y resta de fracciones", "Tablas de multiplicar", "Divisiones", "Problemas de pensamiento matemático"]
+    },
+    {
+        "id": 1,
+        "titulo": "Español",
+        "temas": ["Ortografía", "Ensayos", "Mitos y leyendas", "Lectura"]
+    },
+    {
+        "id": 2,
+        "titulo": "Historia",
+        "temas": ["Revolución Mexicana", "Historia Mundial", "Independencia de México", "Virreinato"]
+    },
+    {
+        "id": 3,
+        "titulo": "Formación Cívica y Ética",
+        "temas": ["Valores", "Constitución Política", "Artículos Principales", "Población"]
+    },
+    {
+        "id": 4,
+        "titulo": "Geografía",
+        "temas": ["Desastres naturales", "Capas de la Tierra", "Latitud y Longitud", "Ecosistema"]
+    },
+    {
+        "id": 5,
+        "titulo": "Inglés",
+        "temas": ["Verbo to be", "Presente contínuo", "Vocabulario", "Presente perfecto"]
+    }
+]

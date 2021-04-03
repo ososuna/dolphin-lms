@@ -1,0 +1,21 @@
+[{
+        "icon": "list-sharp",
+        "name": "Temario",
+        "redirectTo": "/temario"
+    },
+    {
+        "icon": "play-sharp",
+        "name": "Contenido",
+        "redirectTo": "/contenido"
+    },
+    {
+        "icon": "book-sharp",
+        "name": "Historial",
+        "redirectTo": "/historial"
+    },
+    {
+        "icon": "log-out-sharp",
+        "name": "Cerrar sesión",
+        "redirectTo": "/login"
+    }
+]

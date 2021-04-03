@@ -1,0 +1,63 @@
+<ion-header *ngIf="tema">
+    <ion-toolbar>
+        <ion-title>{{ tema.titulo }}</ion-title>
+        <ion-buttons slot="start">
+            <ion-button (click)="inicio()">
+                <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-header *ngIf="!tema">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="inicio()">
+                <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="!tema">
+    <div class="error-mensaje">
+        <h2>Selecciona un tema desde el apartado de inicio</h2>
+    </div>
+</ion-content>
+
+<ion-content *ngIf="tema">
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12">
+                <ion-card>
+                    <img src="../../assets/img{{ tema.img[0] }} " />
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row class="texto">
+            <ion-col size="12">
+                <p>{{ tema.descripcion[1] }}</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="12">
+                <ion-card>
+                    <img src="../../assets/img{{ tema.img[1] }} " />
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row class="texto">
+            <ion-col size="12">
+                <h4 class="subtema">{{ tema.descripcion[2] }}</h4>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="12">
+                <ion-card>
+                    <img src="../../assets/img{{ tema.img[2] }} " />
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

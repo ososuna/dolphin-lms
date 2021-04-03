@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Temario</ion-title>
+        <ion-buttons slot="start">
+            <ion-button (click)="inicio()">
+                <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-segment scrollable color="primary" (ionChange)="cambioGrado( $event.detail.value )">
+        <ion-segment-button *ngFor="let grado of grados" [value]="grado">
+            <ion-label textcapitalize>{{ grado }}</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <ion-grid fixed>
+        <ion-row *ngFor="let tema of grado.temas; let i = index">
+            <ion-col>
+                <h1>{{ fechas[i] }}</h1>
+                <ion-item *ngFor="let tema of grado.temas">
+                    <ion-label>{{ tema }}</ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

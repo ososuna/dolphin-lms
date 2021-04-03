@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Contenido</ion-title>
+        <ion-buttons slot="start">
+            <ion-button (click)="inicio()">
+                <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-segment scrollable color="primary">
+        <ion-segment-button *ngFor="let grado of grados" [value]="grado">
+            <ion-label textcapitalize>{{ grado }}</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <ion-grid fixed>
+        <ion-row *ngFor="let materia of materias | async">
+            <ion-col>
+                <h1>{{ materia.titulo }}</h1>
+                <ion-item *ngFor="let tema of materia.temas" (click)="contenido( tema )">
+                    <ion-label>{{ tema }}</ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

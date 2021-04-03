@@ -1,0 +1,51 @@
+[{
+        "id": 0,
+        "titulo": "Suma y resta de fracciones",
+        "descripcion": ["Recuerda que para poder sumar o restar fracciones es necesario que tengan el mismo denominador. Si los denominadores son distintos...",
+            "Para realizar una suma o resta de fracciones deben tener el mismo denominador. Por lo tanto, podemos encontrarnos diferentes casos.",
+            "Sumas de fracciones con diferente denominador"
+        ],
+        "grado": "Matemáticas 5to Grado",
+        "img": ["/mat/mat_img_01.jpg", "/mat/mat_img_02.png", "/mat/mat_img_03.png"]
+    },
+    {
+        "id": 1,
+        "titulo": "Independencia de México",
+        "descripcion": ["La Independencia de México fue un proceso político y social que se desarrolló a lo largo de once años. Inició el 16 de septiembre de 1810...",
+            "El proceso de independencia mexicano inició con el Grito de Dolores, llamado que hizo el sacerdote Miguel Hidalgo y Costilla a sus feligreses para que se rebelaran en contra del Virreinato de Nueva España.",
+            "Antecedentes de la Independencia de México"
+        ],
+        "grado": "Historia 2do Grado",
+        "img": ["/hist/hist_img_01.jpg", "/hist/hist_img_02.png", "/hist/hist_img_03.png"]
+    },
+    {
+        "id": 2,
+        "titulo": "Ortografía",
+        "descripcion": ["La ortografía es el conjunto de las normas de escritura de una lengua. Siempre se insiste en la idea de que para escribir bien hay que leer mucho...",
+            "Una vez que los niños han aprendido los rudimentos básicos de la escritura, llega el momento de aprender a escribir correctamente.",
+            "Uso de la 'B' y 'V'"
+        ],
+        "grado": "Español 2do Grado",
+        "img": ["/esp/esp_img_01.jpg", "/esp/esp_img_02.png", "/esp/esp_img_03.png"]
+    },
+    {
+        "id": 3,
+        "titulo": "Latitud y Longitud",
+        "descripcion": ["El sistema de coordenadas geográficas es un sistema que referencia cualquier punto de la superficie terrestre y que utiliza para ello dos coordenadas angulares, latitud y longitud...",
+            "El ecuador es el círculo máximo imaginario perpendicular al eje de rotación de la Tierra y, por tanto, único. Este círculo, equidistante de los polos, divide la Tierra en dos hemisferios: hemisferio Norte y hemisferio Sur.",
+            "Sistema de Coordenadas Geográficas"
+        ],
+        "grado": "Geografía 5to Grado",
+        "img": ["/geo/geo_img_01.jpg", "/geo/geo_img_02.png", "/geo/geo_img_03.png"]
+    },
+    {
+        "id": 4,
+        "titulo": "Constitución Política",
+        "descripcion": ["La Constitución Política de los Estados Unidos Mexicanos de 1917 es la norma fundamental, establecida para regir jurídicamente al país...",
+            "Una constitución es un acuerdo de reglas de convivencia, es decir, una forma de pacto político y social. Se llama así porque integra, establece, organiza, constituye las normas que rigen a la sociedad de un país.",
+            "Artículos Principales"
+        ],
+        "grado": "Formación Cívica y Ética 5to Grado",
+        "img": ["/fce/fce_img_01.jpg", "/fce/fce_img_02.png", "/fce/fce_img_03.png"]
+    }
+]

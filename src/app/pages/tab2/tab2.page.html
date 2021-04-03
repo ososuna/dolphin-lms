@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Foro de preguntas y respuestas
+        </ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button menu="first"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title>
+                            <ion-icon class="icono-publicacion" name="add-circle" color="primary"></ion-icon> Agregar publicación</ion-card-title>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let p of publicaciones | async">
+            <ion-col size="12">
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-subtitle>
+                            <ion-chip>
+                                <ion-avatar>
+                                    <img src="../../assets/img/user.png" alt="usuario">
+                                </ion-avatar>
+                                <ion-label>Sebastián Acosta</ion-label>
+                            </ion-chip>
+                        </ion-card-subtitle>
+                        <ion-card-title>{{ p.titulo }}</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <p>{{ p.comentarios[0] }} <span>[...]</span></p>
+                        <div class="icono-comentario">
+                            <ion-icon slot="icon-only" name="chatbubble-ellipses" color="primary"></ion-icon>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

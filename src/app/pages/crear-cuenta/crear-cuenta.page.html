@@ -1,0 +1,62 @@
+<ion-content>
+    <ion-slides class="crearCuentaSlide" #crearCuentaSlide>
+        <ion-slide>
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col>
+                        <h1>Escribe tu información</h1>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label position="floating">Nombre</ion-label>
+                                <ion-input name="nombre" type="text" required></ion-input>
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label position="floating">Apellido</ion-label>
+                                <ion-input name="apellido" type="text" required></ion-input>
+                            </ion-item>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button (click)="siguienteSlide()" expand="block" fill="clear" shape="round">
+                            Siguiente
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col>
+                        <h1>Elige los grados que te interesen</h1>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list>
+                            <ion-item *ngFor="let grado of grados">
+                                <ion-label>{{grado.val}}</ion-label>
+                                <ion-checkbox slot="end" [(ngModel)]="grado.isChecked"></ion-checkbox>
+                            </ion-item>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button (click)="inicio()" expand="block" fill="clear" shape="round">
+                            Crear Cuenta
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

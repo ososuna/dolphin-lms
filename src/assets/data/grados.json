@@ -1,0 +1,31 @@
+[{
+        "id": 1,
+        "titulo": "Primero",
+        "temas": ["Sumas y Restas", "Vocales", "Ortografía", "Valores", "Pronombres en inglés", "Abecedario"]
+    },
+    {
+        "id": 2,
+        "titulo": "Segundo",
+        "temas": ["Independencia de México", "Ortografía", "Lectura", "Verbo To Be", "Tablas de multiplicar"]
+    },
+    {
+        "id": 3,
+        "titulo": "Tercero",
+        "temas": ["Acentos", "Multiplicaciones", "Ecosistema"]
+    },
+    {
+        "id": 4,
+        "titulo": "Cuarto",
+        "temas": ["Divisiones", "Revolución Mexicana", "Teoría de la Evolución", "Vocabulario en inglés", "Fracciones"]
+    },
+    {
+        "id": 5,
+        "titulo": "Quinto",
+        "temas": ["Suma y Resta de Fracciones", "Longitud y Latitud", "Constitución Política", "Problemas de fracciones", "Valores morales"]
+    },
+    {
+        "id": 6,
+        "titulo": "Sexto",
+        "temas": ["Ensayos", "Multiplicación y División de Fracciones", "Segunda Guerra Mundial", "Potencias y raíz cuadrada", "Fundamentos de álgebra"]
+    }
+]
